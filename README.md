@@ -13,3 +13,6 @@ https://phoenixnap.com/kb/how-to-backup-restore-a-mysql-database
 
 #run stress test
 https://ourcodeworld.com/articles/read/957/how-to-run-a-stress-test-to-your-apache-server-in-ubuntu-18-04
+
+#nano commands
+https://staffwww.fullcoll.edu/sedwards/Nano/NanoKeyboardCommands.html
