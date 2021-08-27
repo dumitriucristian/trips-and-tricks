@@ -1,0 +1,16 @@
+#How to add ssh key to github when using digitalocean server: 
+
+##Step One - rename your repo from https to ssh if was cloned with https.  
+```git remote set-url git@github.com:USERNAME/REPOSITORY.git``` 
+Details here: https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url
+
+##Step two - create ssh key in your local machine to /root/.ssh
+```ssh-keygen -t ed25519 -C "your_email@example.com"```
+Details here:https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+
+##Step three:
+Step four. Add generated key in your github account 
+Details here:https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+
+##Step five: Debug your connection using: 
+```ssh -vT git@github.com```
