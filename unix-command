@@ -1,0 +1,13 @@
+#Debug DNS, Ports and Connections
+
+##check DNS availability with curl 
+```curl -IL fundatiazurli.ro``` 
+
+##check DNS avilability
+'''% dig A fundatiazurli.ro +short```
+
+##check ports acces with nmap 
+```nmap -p22,80,443 174.138.102.45```
+
+##check ufw 
+```ufw status```
