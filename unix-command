@@ -1,13 +1,21 @@
-#Debug DNS, Ports and Connections
+# Debug DNS, Ports and Connections
 
-##check DNS availability with curl 
+## check DNS availability with curl 
 ```curl -IL fundatiazurli.ro``` 
 
-##check DNS avilability
+## check DNS avilability
 '''% dig A fundatiazurli.ro +short```
 
-##check ports acces with nmap 
+## check ports acces with nmap 
 ```nmap -p22,80,443 174.138.102.45```
 
-##check ufw 
+## check ufw 
 ```ufw status```
+## set aliases in ubuntu
+1. create file .bash_aliases in ~
+2. add your aliasses eg:
+```alias dc-run='docker-compose run --rm'
+  alias artisan='dc-run artisan'
+```
+3. activate aliases file 
+```source ~/bash_aliases```
